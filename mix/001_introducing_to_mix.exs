@@ -9,6 +9,7 @@
 ###########
 # - build tool that ships with erlang
 # - provides tasks for creating, compiling & testing, managing the dependencies and much more
+# - short overview with `$ mix help`
 
 ##############
 ### ExUnit ###
@@ -36,3 +37,17 @@
 
 # - mix also generated the test file and prepare the module tests
 # - running tests with `$ mix test`
+
+### Formatter ###
+# - mix comes with a nice foramtter module
+# - by default it formats all `.ex` and `.exs` files
+# - you can specify the formated files in `.formatter.mix`
+# - run with: $ mix format`
+# - for just checking without fixing run: `$ mix format --check-formatted`
+
+
+### Environments ###
+# - :dev, :test, :prod
+# - it is defined in the mix.exs file
+# - to start in another environment change it there (useally not recommended) or start:
+#   MIX_ENV=prod mix compile
